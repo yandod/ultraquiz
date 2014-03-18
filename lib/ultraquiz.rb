@@ -29,8 +29,8 @@ module Ultraquiz
             row["name"],
             row["downloads"],
             row["version"],
-            row["version-downloads"],
-            row["author"]
+            row["version_downloads"],
+            row["authors"]
           ]
         end
       end

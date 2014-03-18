@@ -15,8 +15,8 @@ describe 'Ultraquiz', '#putsAsCsv' do
 			"name" => 'thor',
 			"downloads" => 100000,
 			"version" => '0.18.1',
-			"version-downloads" => 3000,
-			"author" => 'Katz'
+			"version_downloads" => 3000,
+			"authors" => 'Katz'
 		}]).should eq('thor,100000,0.18.1,3000,Katz' + "\n")
 	end
 
@@ -26,14 +26,14 @@ describe 'Ultraquiz', '#putsAsCsv' do
 			"name" => 'thor',
 			"downloads" => 100000,
 			"version" => '0.18.1',
-			"version-downloads" => 3000,
-			"author" => 'Katz'
+			"version_downloads" => 3000,
+			"authors" => 'Katz'
 		},{
 			"name" => 'rake',
 			"downloads" => 90000,
 			"version" => '10.1.1',
-			"version-downloads" => 4000,
-			"author" => 'Jim'
+			"version_downloads" => 4000,
+			"authors" => 'Jim'
 		}]).should eq('thor,100000,0.18.1,3000,Katz' + "\n" + 'rake,90000,10.1.1,4000,Jim' + "\n")
 	end
 end
