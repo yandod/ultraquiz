@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'ultraquiz'
+require 'ultraquiz/gems_client'
+require 'thor'
+
+module Ultraquiz
+  class UltraquizCLI < Thor
+    desc 'fetchcsv', 'fetch data from rubygems.org'
+    def fetchcsv (query='')
+      ultra = Ultraquiz.new
+      gems = GemsClient.new
+      matched = []
+      page = 1
+      while true
+        response = gems.search('', page)
+        break if response.empty?
+        page += 1
+        print ultra.putsAsCsv(response)
+      end
+    end
+  end
+end
+
+Ultraquiz::UltraquizCLI.start

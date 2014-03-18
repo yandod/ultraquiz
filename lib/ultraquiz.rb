@@ -26,11 +26,11 @@ module Ultraquiz
       csv_string = CSV.generate do |csv|
         data.each do |row|
           csv << [
-            row[:name],
-            row[:downloads],
-            row[:version],
-            row[:'version-downloads'],
-            row[:author]
+            row["name"],
+            row["downloads"],
+            row["version"],
+            row["version-downloads"],
+            row["author"]
           ]
         end
       end
