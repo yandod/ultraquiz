@@ -1,6 +1,6 @@
 # Ultraquiz
 
-TODO: Write a gem description
+get stats data from rubygems.org
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```bundle exec ultraquiz fetchcsv```
 
 ## Contributing
 
