@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["yandod@gmail.com"]
   spec.description   = 'get trivial stats from rubygems.org'
   spec.summary       = 'get trivial stats'
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/yandod/ultraquiz"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
