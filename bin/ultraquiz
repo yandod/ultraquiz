@@ -8,7 +8,7 @@ module Ultraquiz
   class UltraquizCLI < Thor
     desc 'fetchcsv', 'fetch data from rubygems.org'
     def fetchcsv (query='')
-      page = 1
+      page = 1  
       ultra = Ultraquiz.new
       gems = GemsClient.new
       matched = []
